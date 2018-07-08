@@ -1,0 +1,18 @@
+@mixin font($fs, $lh) {
+  font-size: $fs;
+  line-height: $lh;
+//  font-weight: $fw;
+}
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin on-center($w, $mrgn) {
+  width: $w;
+  margin: $mrgn;
+}
